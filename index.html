@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon"
+    href="data:image/jpeg;base64,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">
+  <title>DHANUSH R</title>
+  <!--- favicon-->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <!--- custom css link -->
+  <link rel="stylesheet" href="k.css">
+  <!--- google font lin-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--- #MAIN-->
+  <main>
+    <!--- #SIDEBAR-->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./IMG_20230914_171317.jpg" alt="DHANUSH R" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="DHANUSH RAMASAMY">DHANUSH RAMASAMY</h1>
+          <p class="title">Web developer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:dhanushplr69@gmail.com" class="contact-link">dhanushplr69@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+916369213856" class="contact-link">+91 6369213856</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="2003-09-06">Sep 06, 2003</time>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>PAPPAMPALAYAM, CAUVERY R S, KUMARAPALAYAM(TK), NAMAKKAL(DT). PINCODE :638007</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.facebook.com/dhanush.plr.94/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://twitter.com/Dhanush_12345" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.instagram.com/dhanushplr/?next=%2F" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- #main-content-->
+    <div class="main-content">
+      <!-- - #NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+      <!--- #ABOUT -->
+      <article class="about  active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+        <section class="about-text">
+          <p>
+            My name is Dhanush R, and I am a web developer. I specialize in front-end development using HTML, CSS, and JavaScript. I am passionate about creating beautiful and functional websites that provide a great user experience. I have experience in creating responsive websites that work well on all devices. I am always eager to learn new technologies and improve my skills. I believe that a portfolio website is an essential tool for any web developer, and I have created my own portfolio website using HTML and CSS. My portfolio website showcases my work history, design skills, and projects. I am constantly updating my portfolio website to reflect my latest work and skills. I am excited to continue my journey as a web developer and contribute to the ever-evolving world of web development.
+          </p>
+        </section>
+        <!-- - testimonials -->
+
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">CERTIFICATES</h3>
+          <ul class="testimonials-list has-scrollbar">
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <a href="./6f000e3d-1476-4a7f-b80b-558993cca83d.png">
+                  <img src="./6f000e3d-1476-4a7f-b80b-558993cca83d.png" alt="HTML" width="60" data-testimonials-avatar></a>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>HTML</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>I completed the HTML course in Sololearn, and it was a great learning experience. The course provided a comprehensive introduction to HTML, covering topics such as HTML tags, attributes, and elements.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <a href="./59973555-5b28-4482-b44e-981ec84f97b0.png">
+                  <img src="./59973555-5b28-4482-b44e-981ec84f97b0.png" alt="CSS" width="60" data-testimonials-avatar></a>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>CSS</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>I completed the CSS course in Sololearn, and it was a fantastic learning experience. The course provided a comprehensive introduction to CSS, covering topics such as CSS selectors, properties, and values. I learned how to style HTML elements using CSS, such as changing the font size, color, and alignment. The course also taught me how to use CSS to create layouts, such as positioning elements and creating responsive designs.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <a href="./5af18889-bd5a-4c74-87be-25a7aa4c470b.png">
+                  <img src="./5af18889-bd5a-4c74-87be-25a7aa4c470b.png" alt="JavaScript" width="60" data-testimonials-avatar></a>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>JavaScript</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>I completed the JavaScript course in Sololearn, and it was an amazing learning experience. The course provided a comprehensive introduction to JavaScript, covering topics such as variables, data types, functions, and loops. I learned how to use JavaScript to create interactive web pages, such as validating forms, creating animations, and handling events.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <a href="./97081bf6-7450-491e-8e7d-07400d28f786.png"></a>
+                  <img src="./97081bf6-7450-491e-8e7d-07400d28f786.png" alt="JAVA" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>JAVA</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>I completed the Java course in Sololearn, and it was a great learning experience. The course provided a comprehensive introduction to Java, covering topics such as variables, data types, control structures, and object-oriented programming. I learned how to write Java programs using classes and objects, and how to use Java libraries and frameworks to simplify programming tasks.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!--
+          - testimonials modal
+        -->
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./6f000e3d-1476-4a7f-b80b-558993cca83d.png" alt="HTML" width="100" data-modal-img>
+              </figure>
+              <!-- <img src="https://www.vandelaydesign.com/wp-content/uploads/circle-2-615x318.jpg" alt="quote icon"> -->
+            </div>
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>HTML</h4>
+              <!-- <time datetime="2021-06-14">11 August, 2023</time> -->
+              <div data-modal-text>
+                <p>
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- intern-->
+        <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
+            <figure class="testimonials-avatar-box">
+              <a href=".//CPBLaa0323aa217.jpg">
+              <img src=".//CPBLaa0323aa217.jpg" alt="HTML" width="60" data-testimonials-avatar></a>
+            </figure>
+            <h4 class="h4 testimonials-item-title" data-testimonials-title>Intrenship</h4>
+            <div class="testimonials-text" data-testimonials-text>
+              <p>Has Completed
+                One Month Intrenship On Specialization
+                In FULL STACK DEVELOPER 
+              </p>
+            </div>
+          </div>
+        </li>
+        <!-- - clients -->
+        <section class="clients">
+          <h3 class="h3 clients-title">See  My Gallery</h3>
+          <ul class="clients-list has-scrollbar">
+            <li class="clients-item">
+              <a href="IMG_20230914_171609.jpg">
+                <img src="IMG_20230914_171609.jpg" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href=".//IMG_20230308_213758.jpg">
+                <img src=".//IMG_20230308_213758.jpg" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href=".//IMG_20230318_072937_1.jpg">
+                <img src=".//IMG_20230318_072937_1.jpg" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href=".//IMG_20230806_185121.jpg">
+                <img src=".//IMG_20230806_185121.jpg" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="./IMG_20230421_205252.jpg">
+                <img src="./IMG_20230421_205252.jpg" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="./IMG_20230318_071841_1.jpg">
+                <img src="./IMG_20230318_071841_1.jpg" alt="client logo">
+              </a>
+            </li> 
+          </ul>
+        </section>
+      </article>
+      <!--- #RESUME-->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Anna University</h4>
+              <span>2021 — 2025</span>
+              <p class="timeline-text">Studying BE - COMPUTER SCIENCE AND ENGINEERING in
+                K.S.R. COLLEGE OF ENGINEERING, Tiruchengode.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Higher Secondary School Certificate</h4>
+              <span>2020 — 2021</span>
+              <p class="timeline-text">
+                Completed Higher Secondary in SPB MATRICULATION AND HIGHER
+SECONDARY SCHOOL at Pallipalayam with 73.71%.in Namakkal District
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Secondary School Leaving Certificate</h4>
+              <span>2018 — 2019</span>
+              <p class="timeline-text">
+                Completed S.S.L.C in DEIVANAI PERUMAL HIGH SCHOOL at
+                MolagoundanPalayam, with 61% in Erode District.
+              </p>
+            </li>
+          </ol>
+        </section>
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">HTML</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">CSS</h5>
+                <data value="60">60%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">JavaScript</h5>
+                <data value="40">40%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 40%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">JAVA</h5>
+                <data value="45">45%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 45%;"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <!--portfolio-->
+        <section class="projects">
+          <ul class="filter-list">
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+            </button>
+          </div>
+        </section>
+      </article>
+      <!--
+        - #CONTACT
+      -->
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        <section class="mapbox" data-mapbox>
+          <figure><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836.641772456836!2d77.77629746951672!3d11.33698691424049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba965b87e5dc1cd%3A0xc270e811d55bbe19!2sPappampalayam%20Road%2C%20Pappampalayam%2C%20Tamil%20Nadu%20638007!5e1!3m2!1sen!2sin!4v1696052725205!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div>
+  </main> <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+  <!--ionicon link-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
